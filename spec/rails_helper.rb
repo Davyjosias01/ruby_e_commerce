@@ -1,6 +1,7 @@
 require 'spec_helper'
 require 'vcr'
 require 'simplecov'
+require 'faker'
 
 
 ENV['RAILS_ENV'] ||= 'test'
@@ -21,7 +22,7 @@ end
 RSpec.configure do |config|
   config.fixture_paths = [
     Rails.root.join('spec/fixtures')
-  ] 
+  ]
   config.use_transactional_fixtures = true
   config.filter_rails_from_backtrace!
 end
@@ -38,5 +39,4 @@ VCR.configure do |config|
   config.hook_into :webmock
 end
 
-SimpleCov.start 
-
+SimpleCov.start
