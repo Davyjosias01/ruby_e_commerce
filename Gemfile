@@ -21,6 +21,8 @@ gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
+gem "devise"
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -86,3 +88,5 @@ end
 
 
 # Eu adicionei esse comentario para testar um PULL-REQUEST
+
+gem "jsbundling-rails", "~> 1.3"
